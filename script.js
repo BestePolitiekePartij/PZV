@@ -57,7 +57,7 @@ document.title = PARTIJ.naam;
 $("logo").textContent = "★ " + PARTIJ.naam;
 $("kop").textContent = PARTIJ.kop;
 $("slogan").textContent = PARTIJ.slogan;
-$("footer").textContent = "© " + new Date().getFullYear() + " " + PARTIJ.naam + " · Schoolproject Wereldburgerschap";
+$("footer").textContent = "© " + new Date().getFullYear() + " " + PARTIJ.naam + " · WBS Project Door Xavier, Jonas, Lara, Mira, en Noam";
 vul($("heroFoto"), FOTOS.hero, 0, "Hoofdfoto");
 vul($("meedoenFoto"), FOTOS.meedoen, 1, "Doe mee");
 PARTIJ.intro.forEach(t => { const p = document.createElement("p"); p.textContent = t; $("intro").appendChild(p); });
