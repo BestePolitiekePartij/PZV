@@ -1,20 +1,19 @@
 // ====== HIER PAS JE ALLES AAN ======
 const PARTIJ = {
-  naam: "Beste Politieke Partij",          // naam wijzigt later
-  kop: "Tijd voor een eerlijker Nederland",
-  slogan: "Links, progressief en klaar voor de toekomst.",
+  naam: "De Beste Politieke Partij",
+  kop: "Titel ('Tijd voor een eerlijker Nederland' ofzo)",
+  slogan: "Slogan komt hier",
   intro: [
-    "Hier komt de introductietekst van onze partij. Vertel in een paar zinnen waar jullie voor staan en waarom jullie deze partij zijn begonnen.",
-    "Nog een alinea over jullie visie: wat willen jullie veranderen in de samenleving, en voor wie?"
+    "Hier komt de introductietekst van onze partij. In een paar zinnen vertellen waar we voor staan.",
+    "Nog een alinea over de visie. Misschien gewoon wat meer uitgebreid vertellen?"
   ],
-  voordelen: [   // wat krijg je als je meedoet
+  voordelen: [
     "Voordeel 1 (nog in te vullen)",
     "Voordeel 2 (nog in te vullen)",
     "Voordeel 3 (nog in te vullen)"
   ]
 };
 
-// Vul titel en tekst in zodra jullie het besproken hebben
 const SPEERPUNTEN = [
   { titel: "", kort: "", uitleg: "" },
   { titel: "", kort: "", uitleg: "" },
@@ -23,7 +22,6 @@ const SPEERPUNTEN = [
   { titel: "", kort: "", uitleg: "" }
 ];
 
-// Echte foto's: zet een bestandsnaam of link (bijv. "fotos/hero.jpg"). Leeg = illustratie.
 const FOTOS = { hero: "", meedoen: "" };
 // ====================================
 
@@ -73,9 +71,9 @@ SPEERPUNTEN.forEach((p, i) => {
   t.innerHTML = `<div class="nr">${i + 1}</div><h3></h3><p class="kort"></p>
     <div class="more"><p class="lang"></p></div>
     <button class="toggle" aria-expanded="false">Meer lezen ▾</button>`;
-  t.querySelector("h3").textContent = leeg ? "Speerpunt " + (i + 1) + " – nog in te vullen" : p.titel;
-  t.querySelector(".kort").textContent = p.kort || "Hier komt een korte omschrijving.";
-  t.querySelector(".lang").textContent = p.uitleg || "Hier komt de uitgebreide uitleg van dit speerpunt.";
+  t.querySelector("h3").textContent = leeg ? "Punt " + (i + 1) + " (nog in te vullen)" : p.titel;
+  t.querySelector(".kort").textContent = p.kort || "Hier komt een korte uitleg.";
+  t.querySelector(".lang").textContent = p.uitleg || "Hier komt de uitgebreide uitleg van dit punt.";
   const b = t.querySelector(".toggle");
   b.addEventListener("click", () => {
     const open = t.classList.toggle("open");
@@ -87,25 +85,9 @@ SPEERPUNTEN.forEach((p, i) => {
 const cta = document.createElement("article");
 cta.className = "tile cta";
 cta.style.setProperty("--c", "var(--band)");
-cta.innerHTML = `<h3>Sta jij ook voor een eerlijker land?</h3><p>Sluit je aan en help ons om dit waar te maken.</p><a class="btn" href="#meedoen">Word lid</a>`;
+cta.innerHTML = `<h3>Sta jij ook voor een eerlijker land?</h3><p>Sluit je aan en help ons om dit waar te maken!(niet echt)</p><a class="btn" href="#meedoen">Word lid</a>`;
 $("tiles").appendChild(cta);
 
-let steun = 0;
 $("ctaBtn").addEventListener("click", () => {
-  steun++;
-  $("msg").textContent = steun === 1 ? "Bedankt voor je steun! 🎉" : "Je hebt " + steun + " keer gesteund. Sterk bezig! 💪";
-});
-
-const PALETTES = { mint: "#eaf1ec", roze: "#f7e6e0", blauw: "#e4edf3", wit: "#faf8f4" };
-Object.entries(PALETTES).forEach(([n, c]) => {
-  const b = document.createElement("button");
-  b.className = "sw"; b.style.background = c; b.title = n;
-  b.setAttribute("aria-label", "Achtergrond " + n);
-  b.onclick = () => { document.documentElement.dataset.bg = n; };
-  $("swatches").appendChild(b);
-});
-$("themeBtn").addEventListener("click", () => {
-  const r = document.documentElement;
-  const dark = r.dataset.theme === "dark" || (!r.dataset.theme && matchMedia("(prefers-color-scheme: dark)").matches);
-  r.dataset.theme = dark ? "light" : "dark";
+  $("msg").textContent = "Bedankt voor je steun! ... Idk wat ik hier nog meer moet schrijven, maar thx!";
 });
