@@ -1,13 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Unknown (WIP naam)</title>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Beste Politieke Partij</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap bar">
+    <div class="logo" id="logo"></div>
+    <nav>
+      <a href="#standpunten">Standpunten</a>
+      <a href="#waarvoor">Over ons</a>
+      <a class="pill" href="#meedoen">Word lid</a>
+      <span class="tools"><span id="swatches" class="tools" title="Kies achtergrondkleur"></span><button class="theme" id="themeBtn" aria-label="Wissel licht/donker">☾ / ☀</button></span>
+    </nav>
+  </div>
+</header>
 
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <h1>test text</h1>
-    </body>
+<main>
+  <div class="wrap">
+    <div class="hero">
+      <div>
+        <span class="kicker">Politieke partij</span>
+        <h1 id="kop"></h1>
+        <p id="slogan"></p>
+        <a class="btn" href="#standpunten">Onze standpunten</a><a class="btn ghost" href="#meedoen">Doe mee</a>
+      </div>
+      <div class="visual" id="heroFoto"></div>
+    </div>
+
+    <div class="intro" id="waarvoor">
+      <h2>Waar wij voor staan</h2>
+      <div id="intro"></div>
+    </div>
+
+    <section id="standpunten">
+      <h2 class="sec">Onze 5 speerpunten</h2>
+      <p class="sub">Dit gaan wij doen. Klik op een kaart voor meer uitleg.</p>
+      <div class="tiles" id="tiles"></div>
+    </section>
+  </div>
+
+  <section class="join" id="meedoen">
+    <div class="wrap">
+      <div>
+        <h2>Doe mee!</h2>
+        <ul id="voordelen"></ul>
+        <button class="btn" id="ctaBtn">Ik steun deze partij</button>
+        <div id="msg" aria-live="polite"></div>
+      </div>
+      <div class="visual" id="meedoenFoto"></div>
+    </div>
+  </section>
+</main>
+<footer id="footer"></footer>
+
+<script src="script.js"></script>
+</body>
 </html>
