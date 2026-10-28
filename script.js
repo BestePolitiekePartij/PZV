@@ -6,8 +6,8 @@ const PARTIJ = {
   kop: "P.Z.V.",
   slogan: "Partij voor Zekerheid en Vooruitgang",
   intro: [
-    "Hier komt de introductietekst van onze partij. In een paar zinnen vertellen waar we voor staan.",
-    "Nog een alinea over de visie. Misschien gewoon wat meer uitgebreid vertellen?"
+    "Wij zijn een linkse, progressieve partij die strijdt voor gelijkheid, vrijheid en een eerlijke toekomst voor iedereen. Samen willen we Nederland betaalbaarder, veiliger en duurzamer maken!",
+    "Wij zijn een linkse, progressieve partij die staat voor gelijkheid, vrijheid en een eerlijke samenleving. Wij vinden dat iedereen gelijke kansen verdient en zichzelf moet kunnen zijn. Daarom willen wij meer betaalbare woningen bouwen, het recht op abortus beschermen, de online veiligheid verbeteren, glutenvrije producten goedkoper maken en milieuvervuiling tegengaan. Wij vinden dat niemand buitengesloten mag worden en dat iedereen toegang moet hebben tot de basisbehoeften. Samen willen we werken aan een Nederland dat eerlijker, veiliger en duurzamer is voor iedereen, nu en in de toekomst!"
   ],
   voordelen: [
     "Jouw stem telt - Denk mee over plannen en ideeën die Nederland eerlijker en beter kunnen maken.",
@@ -58,7 +58,7 @@ document.title = PARTIJ.naam;
 $("logo").textContent = "★ " + PARTIJ.naam;
 $("kop").textContent = PARTIJ.kop;
 $("slogan").textContent = PARTIJ.slogan;
-$("footer").textContent = "© " + new Date().getFullYear() + " " + PARTIJ.naam + " · WBS Project Door Xavier, Jonas, Lara, Mira, en Noam";
+$("footer").textContent = "© " + new Date().getFullYear() + " " + PARTIJ.naam + " · WBS Project Door Xavier, Jonas (De Blobvis!), Lara, Mira, en Noam";
 vul($("heroFoto"), FOTOS.hero, 0, "Hoofdfoto");
 vul($("meedoenFoto"), FOTOS.meedoen, 1, "Doe mee");
 PARTIJ.intro.forEach(t => { const p = document.createElement("p"); p.textContent = t; $("intro").appendChild(p); });
