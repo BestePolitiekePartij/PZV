@@ -1,8 +1,10 @@
+
+
 // ====== HIER PAS JE ALLES AAN ======
 const PARTIJ = {
   naam: "De Beste Politieke Partij",
-  kop: "PZV (Partij voor Zekerheid en Vooruitgang)",
-  slogan: "Slogan komt hier",
+  kop: "P.Z.V.",
+  slogan: "Partij voor Zekerheid en Vooruitgang",
   intro: [
     "Hier komt de introductietekst van onze partij. In een paar zinnen vertellen waar we voor staan.",
     "Nog een alinea over de visie. Misschien gewoon wat meer uitgebreid vertellen?"
