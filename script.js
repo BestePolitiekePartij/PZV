@@ -10,18 +10,18 @@ const PARTIJ = {
     "Nog een alinea over de visie. Misschien gewoon wat meer uitgebreid vertellen?"
   ],
   voordelen: [
-    "Voordeel 1 (nog in te vullen)",
-    "Voordeel 2 (nog in te vullen)",
-    "Voordeel 3 (nog in te vullen)"
+    "Jouw stem telt - Denk mee over plannen en ideeën die Nederland eerlijker en beter kunnen maken.",
+    "Samen maken we verschil - Met meer mensen kunnen we onze ideeën verder verspreiden en onze doelen nastreven.",
+    "Iedereen verdient een kans - Help mee bouwen aan een samenleving waarin iedereen eerlijk behandeld wordt."
   ]
 };
 
 const SPEERPUNTEN = [
-  { titel: "", kort: "", uitleg: "" },
-  { titel: "", kort: "", uitleg: "" },
-  { titel: "", kort: "", uitleg: "" },
-  { titel: "", kort: "", uitleg: "" },
-  { titel: "", kort: "", uitleg: "" }
+  { titel: "Woningsnood", kort: "Wij wille meer huizen bouwen!", uitleg: "Wij vinden dat iedereen recht heeft op een betaalbare en goede woning. Op dit moment is het voor veel mensen, vooral jongeren en mensen met een laag inkomen, moeilijk om een huis te vinden. Daarom willen wij dat er meer betaalbare huur- en koopwoningen worden gebouwd. Ook willen we dat de overheid meer sociale huurwoningen beschikbaar maakt en dat huisjesmelkers en buitensporig hoge huren worden aangepakt. Een woning moet een basisrecht zijn en geen luxeproduct waar alleen rijke mensen toegang toe hebben. " },
+  { titel: "Abortus", kort: "Abortus is ok voor iedereen.", uitleg: "Wij zijn voor het recht op abortus en vinden dat iedereen zelf moet kunnen beslissen over het eigen lichaam. Niemand mag gedwongen worden om een zwangerschap voort te zetten als diegene dat niet wil. Daarom willen wij dat abortus veilig, toegankelijk en betaalbaar blijft. Iedereen moet goede informatie en medische begeleiding kunnen krijgen, zonder veroordeling of discriminatie. Ook vinden wij dat seksuele voorlichting en toegang tot anticonceptie belangrijk zijn om ongewenste zwangerschappen te voorkomen. Wij staan voor keuzevrijheid en vinden dat de overheid mensen hierin moet ondersteunen in plaats van hun keuzes te beperken." },
+  { titel: "Cybersecurity ", kort: "Iedereen moet veilig zijn online", uitleg: "Wij vinden dat iedereen veilig gebruik moet kunnen maken van het internet. Cybercriminaliteit, zoals online oplichting, identiteitsdiefstal en datalekken, vormt een risico voor burgers, bedrijven en de overheid. Daarom willen wij investeren in betere digitale beveiliging en meer voorlichting over online veiligheid. Ook moeten bedrijven en overheidsinstanties zorgvuldig omgaan met persoonlijke gegevens en mensen beter beschermen tegen misbruik van hun data. Daarnaast willen wij dat iedereen, ongeacht leeftijd, inkomen of digitale vaardigheden, toegang heeft tot kennis over cybersecurity. Digitale veiligheid moet een recht zijn en niet alleen iets waar mensen met veel geld of technische kennis van kunnen profiteren." },
+  { titel: "Glutenvrije producten", kort: "Glutenvrije producten moeten goedkoper zijn", uitleg: "Wij vinden dat mensen met coeliakie of een glutenintolerantie veilig en betaalbaar glutenvrij voedsel moeten kunnen kopen. Glutenvrije producten zijn vaak duurder dan gewone producten, waardoor mensen met een medische noodzaak extra kosten hebben. Daarom willen wij dat glutenvrije basisproducten betaalbaarder worden en dat supermarkten voldoende keuze aanbieden. Ook vinden wij duidelijke etiketten en goede informatie over ingrediënten belangrijk, zodat mensen weten wat ze veilig kunnen eten. Daarnaast willen wij meer aandacht voor voedselveiligheid in restaurants, scholen en andere openbare instellingen. Iedereen moet zonder onnodige zorgen of hoge extra kosten kunnen deelnemen aan het dagelijks leven." },
+  { titel: "Milieuvervuiling", kort: "Milieuvervuiling is slecht", uitleg: "Wij willen dat Nederland beter voor het milieu zorgt en de klimaatverandering actief tegengaat. Luchtvervuiling, plastic afval en vervuild water zijn slecht voor mens, dier en natuur. Daarom willen wij dat bedrijven minder schadelijke stoffen uitstoten, dat er meer wordt geïnvesteerd in duurzame energie en dat afval beter wordt verminderd en gerecycled. Grote vervuilers moeten meer verantwoordelijkheid nemen voor de schade die zij veroorzaken. Tegelijkertijd willen we dat duurzame keuzes betaalbaar blijven voor mensen met een laag inkomen. Ook willen we meer groen in steden, betere bescherming van natuurgebieden en goed openbaar vervoer, zodat mensen minder afhankelijk zijn van de auto. Een gezonde leefomgeving moet voor iedereen toegankelijk zijn, niet alleen voor mensen die het zich kunnen veroorloven." }
 ];
 
 const FOTOS = { hero: "", meedoen: "" };
@@ -30,7 +30,6 @@ const FOTOS = { hero: "", meedoen: "" };
 const $ = id => document.getElementById(id);
 const KLEUREN = ["var(--c1)", "var(--c2)", "var(--c3)", "var(--c4)", "var(--c5)"];
 
-// Eigen illustratie (plaatje) als er geen foto is
 function scene(variant) {
   const mensen = ["#c0432f", "#d49a1f", "#2a8a8f", "#4a78b8", "#a8548a", "#c0432f", "#2a8a8f"];
   let p = "";
@@ -93,15 +92,4 @@ $("tiles").appendChild(cta);
 $("ctaBtn").addEventListener("click", () => {
   $("msg").textContent = "Bedankt voor je steun! ... Idk wat ik hier nog meer moet schrijven, maar thx!";
   confetti();
-});
-
-window.addEventListener("load", () => {
-    let positionList = [
-        { x: window.innerWidth * 0.50, y: window.innerHeight * 0.60 },
-        { x: window.innerWidth * 0.25, y: window.innerHeight * 0.40 },
-        { x: window.innerWidth * 0.75, y: window.innerHeight * 0.30 },
-    ];
-    for(let i = 0; i < positionList.length; i++) {
-        setTimeout(() => confetti({ position: positionList[i] }), i * 250);
-    }
 });
