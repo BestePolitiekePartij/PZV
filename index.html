@@ -1,79 +1,65 @@
-
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f9f5ed">
-  <title>De Beste Politieke Partij</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Beste Politieke Partij</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
 </head>
 <body>
-  <header>
-    <div class="wrap bar">
-      <a class="logo" id="logo" href="#home"></a>
-      <nav aria-label="Hoofdnavigatie">
-        <a href="#standpunten">Standpunten</a>
-        <a href="#waarvoor">Over ons</a>
-        <a class="pill" href="#meedoen">Word lid</a>
-      </nav>
-    </div>
-  </header>
+<header>
+  <div class="wrap bar">
+    <div class="logo" id="logo"></div>
+    <nav>
+      <a href="#standpunten">Standpunten</a>
+      <a href="#waarvoor">Over ons</a>
+      <a class="pill" href="#meedoen">Word lid</a>
+    </nav>
+  </div>
+</header>
 
-  <main id="home">
-    <div class="wrap">
-      <section class="hero">
-        <div class="hero-copy">
-          <span class="kicker">Politieke partij</span>
-          <h1 id="kop"></h1>
-          <p id="slogan" class="slogan"></p>
-          <div class="hero-actions">
-            <a class="btn" href="#standpunten">Onze standpunten</a>
-            <a class="btn ghost" href="#meedoen">Doe mee</a>
-          </div>
-        </div>
-        <div class="visual" id="heroFoto"></div>
-      </section>
-
-      <section class="intro" id="waarvoor">
-        <span class="kicker">Onze visie</span>
-        <h2>Waar wij voor staan</h2>
-        <div id="intro"></div>
-      </section>
-
-      <section id="standpunten">
-        <span class="kicker">Wat wij belangrijk vinden</span>
-        <h2 class="sec">Onze 5 speerpunten</h2>
-        <p class="sub">
-          Dit willen wij veranderen. Klik op 'Meer lezen' voor onze volledige uitleg.
-        </p>
-        <div class="tiles" id="tiles"></div>
-      </section>
-    </div>
-
-    <section class="join" id="meedoen">
-      <div class="wrap join-grid">
-        <div>
-          <span class="kicker">Samen maken we verschil</span>
-          <h2>Doe mee!</h2>
-          <ul id="voordelen"></ul>
-          <button class="btn" id="ctaBtn" type="button">
-            Ik steun deze partij
-          </button>
-          <p id="msg" aria-live="polite"></p>
-        </div>
-        <div class="visual" id="meedoenFoto"></div>
+<main>
+  <div class="wrap">
+    <div class="hero">
+      <div>
+        <span class="kicker">Politieke partij</span>
+        <h1 id="kop"></h1>
+        <p id="slogan"></p>
+        <a class="btn" href="#standpunten">Onze standpunten</a><a class="btn ghost" href="#meedoen">Doe mee</a>
       </div>
+      <div class="visual" id="heroFoto"></div>
+    </div>
+
+    <div class="intro" id="waarvoor">
+      <h2>Waar wij voor staan</h2>
+      <div id="intro"></div>
+    </div>
+
+    <section id="standpunten">
+      <h2 class="sec">Onze 5 speerpunten</h2>
+      <p class="sub">Dit zouden wij willen doen. Klik op een kaart voor meer uitleg.</p>
+      <div class="tiles" id="tiles"></div>
     </section>
-  </main>
+  </div>
 
-  <footer id="footer"></footer>
+  <section class="join" id="meedoen">
+    <div class="wrap">
+      <div>
+        <h2>Doe mee!</h2>
+        <ul id="voordelen"></ul>
+        <button class="btn" id="ctaBtn">Ik steun deze partij</button>
+        <div id="msg" aria-live="polite"></div>
+      </div>
+      <div class="visual" id="meedoenFoto"></div>
+    </div>
+  </section>
+</main>
+<footer id="footer"></footer>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
