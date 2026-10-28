@@ -3,7 +3,7 @@ import confetti from "@hiseb/confetti";
 // ====== HIER PAS JE ALLES AAN ======
 const PARTIJ = {
   naam: "De Beste Politieke Partij",
-  kop: "Titel ('Tijd voor een eerlijker Nederland' ofzo)",
+  kop: "PZV (Partij voor Zekerheid en Vooruitgang)",
   slogan: "Slogan komt hier",
   intro: [
     "Hier komt de introductietekst van onze partij. In een paar zinnen vertellen waar we voor staan.",
