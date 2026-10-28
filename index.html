@@ -63,7 +63,16 @@
 <script src="script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@hiseb/confetti@2.2.0/dist/confetti.min.js"></script>
 <script>
-  confetti();
+  $("ctaBtn").addEventListener("click", () => {
+    confetti({
+      position: { x: 0, y: 0 },	// Origin position
+      count: 300,			// Number of particles
+      size: 1,			// Size of the particles
+      velocity: 200,		// Initial particle velocity
+      fade: false,			// Particles fall off the screen, or fade out
+      color: ["#FF06B5"]          // Palette the particles are picked from
+  });
+  });
 </script>
 </body>
 </html>
