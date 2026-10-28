@@ -1,5 +1,3 @@
-import confetti from "@hiseb/confetti";
-
 // ====== HIER PAS JE ALLES AAN ======
 const PARTIJ = {
   naam: "De Beste Politieke Partij",
@@ -92,5 +90,5 @@ $("tiles").appendChild(cta);
 
 $("ctaBtn").addEventListener("click", () => {
   $("msg").textContent = "Bedankt voor je steun! ... Idk wat ik hier nog meer moet schrijven, maar thx!";
-  confetti();
+  
 });
