@@ -1,5 +1,3 @@
-import confetti from "@hiseb/confetti";
-
 // ====== HIER PAS JE ALLES AAN ======
 const PARTIJ = {
   naam: "De Beste Politieke Partij",
