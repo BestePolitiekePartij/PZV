@@ -1,11 +1,10 @@
-// ====== HIER PAS JE ALLES AAN ======
 const PARTIJ = {
   naam: "De Beste Politieke Partij",
   kop: "P.Z.V.",
   slogan: "Partij voor Zekerheid en Vooruitgang",
   intro: [
     "Wij zijn een linkse, progressieve partij die strijdt voor gelijkheid, vrijheid en een eerlijke toekomst voor iedereen. Samen willen we Nederland betaalbaarder, veiliger en duurzamer maken!",
-    "Wij zijn een linkse, progressieve partij die staat voor gelijkheid, vrijheid en een eerlijke samenleving. Wij vinden dat iedereen gelijke kansen verdient en zichzelf moet kunnen zijn. Daarom willen wij meer betaalbare woningen bouwen, het recht op abortus beschermen, de online veiligheid verbeteren, glutenvrije producten goedkoper maken en milieuvervuiling tegengaan. Wij vinden dat niemand buitengesloten mag worden en dat iedereen toegang moet hebben tot de basisbehoeften. Samen willen we werken aan een Nederland dat eerlijker, veiliger en duurzamer is voor iedereen, nu en in de toekomst!"
+    "Wij vinden dat iedereen gelijke kansen verdient en zichzelf moet kunnen zijn. Daarom willen wij meer betaalbare woningen bouwen, het recht op abortus beschermen, de online veiligheid verbeteren, glutenvrije producten goedkoper maken en milieuvervuiling tegengaan. Wij vinden dat niemand buitengesloten mag worden en dat iedereen toegang moet hebben tot de basisbehoeften. Samen willen we werken aan een Nederland dat eerlijker, veiliger en duurzamer is voor iedereen, nu en in de toekomst!"
   ],
   voordelen: [
     "Jouw stem telt - Denk mee over plannen en ideeën die Nederland eerlijker en beter kunnen maken.",
@@ -22,7 +21,7 @@ const SPEERPUNTEN = [
   { titel: "Milieuvervuiling", kort: "Milieuvervuiling is slecht", uitleg: "Wij willen dat Nederland beter voor het milieu zorgt en de klimaatverandering actief tegengaat. Luchtvervuiling, plastic afval en vervuild water zijn slecht voor mens, dier en natuur. Daarom willen wij dat bedrijven minder schadelijke stoffen uitstoten." }
 ];
 
-const FOTOS = { hero: "", meedoen: "" };
+const FOTOS = { hero: "", meedoen: "assets/samen.jpg" };
 // ====================================
 
 const $ = id => document.getElementById(id);
@@ -88,5 +87,5 @@ cta.innerHTML = `<h3>Sta jij ook voor een eerlijker land?</h3><p>Sluit je aan en
 $("tiles").appendChild(cta);
 
 $("ctaBtn").addEventListener("click", () => {
-  $("msg").textContent = "Bedankt voor je steun! ... Idk wat ik hier nog meer moet schrijven, maar thx!";
+  $("msg").textContent = "Bedankt voor je steun! Samen werken we aan een eerlijker land.";
 });
