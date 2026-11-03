@@ -21,7 +21,7 @@ const SPEERPUNTEN = [
   { titel: "Milieuvervuiling", kort: "Milieuvervuiling is slecht", uitleg: "Wij willen dat Nederland beter voor het milieu zorgt en de klimaatverandering actief tegengaat. Luchtvervuiling, plastic afval en vervuild water zijn slecht voor mens, dier en natuur. Daarom willen wij dat bedrijven minder schadelijke stoffen uitstoten." }
 ];
 
-const FOTOS = { hero: "", meedoen: "assets/samen.jpg" };
+const FOTOS = { hero: "assets/logo.png", meedoen: "assets/samen.jpg" };
 // ====================================
 
 const $ = id => document.getElementById(id);
